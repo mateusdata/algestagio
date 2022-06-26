@@ -1,0 +1,43 @@
+function LongestWord(sen) {
+    let maiorPalavra = "";
+    sen.split(" ").forEach(palavra => {
+        palavra = palavra.replace(/[^\w]/g, "");
+
+        if (palavra.trim().length > maiorPalavra.length) {
+            maiorPalavra = palavra.trim();
+        }
+    });
+    sen = maiorPalavra
+    return sen
+    // code goes here  
+
+
+}
+
+// keep this function call here 
+console.log(LongestWord(readline()));
+
+/*
+
+/*let frase = "fun&!.!+- time";
+
+
+function imprimir(sen) {
+    let maiorPalavra = " ";
+    
+    sen.split(" ").forEach(palavra => {
+       // palavra = palavra.replace(/[!&.\-+]/g, "")
+        palavra = palavra.replace(/[^\w]/g, "")
+        if (palavra.trim().length > maiorPalavra.length) {
+            maiorPalavra = palavra.trim();
+        }
+    });
+    return maiorPalavra
+
+
+}
+console.log(imprimir(frase))
+
+//palavra = palavra.replace(/[^\w]/g, "");*/
+
+*/
