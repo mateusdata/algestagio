@@ -1,0 +1,3 @@
+
+SELECT FROM FirstName,LastName WHERE  Age >27
+ORDEM
